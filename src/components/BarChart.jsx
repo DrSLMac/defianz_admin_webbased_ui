@@ -13,26 +13,26 @@ const BarChart = ({ isDashboard = false }) => {
         theme={{
             //added to match color theme
             axis: {
-          domain: {
-            line: {
-              stroke: colors.grey[100],
+                domain: {
+                    line: {
+                    stroke: colors.grey[100],
+                    },
+                },
+                legend: {
+                    text: {
+                    fill: colors.grey[100],
+                    },
+                },
+                ticks: {
+                    line: {
+                    stroke: colors.grey[100],
+                    strokeWidth: 1,
+                    },
+                    text: {
+                    fill: colors.grey[100],
+                    },
+                },
             },
-          },
-          legend: {
-            text: {
-              fill: colors.grey[100],
-            },
-          },
-          ticks: {
-            line: {
-              stroke: colors.grey[100],
-              strokeWidth: 1,
-            },
-            text: {
-              fill: colors.grey[100],
-            },
-          },
-        },
             legends: {
             text: {
                 fill: colors.grey[100],
@@ -40,14 +40,14 @@ const BarChart = ({ isDashboard = false }) => {
             },
         }}
         keys={[
-            'hot dog',
-            'burger',
-            'sandwich',
-            'kebab',
-            'fries',
-            'donut'
+            'Urgent Care',
+            'Emergency Room',
+            'Ambulatory Surgery',
+            'Primary Care',
+            'Specialist',
+            'Inpatient'
         ]}
-        indexBy="country"
+        indexBy="State"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.3}
         valueScale={{ type: 'linear' }}
@@ -83,7 +83,7 @@ const BarChart = ({ isDashboard = false }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: isDashboard ? undefined : 'country', //modified for dashboard
+            legend: isDashboard ? undefined : 'State', //modified for dashboard
             legendPosition: 'middle',
             legendOffset: 32
         }}
@@ -91,7 +91,7 @@ const BarChart = ({ isDashboard = false }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: isDashboard ? undefined : 'food', //modified for dashboard
+            legend: isDashboard ? undefined : 'Facilities', //modified for dashboard
             legendPosition: 'middle',
             legendOffset: -40
         }}
