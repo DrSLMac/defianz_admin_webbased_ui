@@ -318,16 +318,36 @@ export const mockTransactions = [
 ];
 
 export const mockBarData = [
+//label for horizontal bar: 
+//then each element that makes up the bar, followed by the color for that element
+
   {
-    country: "AD",
-    "hot dog": 137,
-    "hot dogColor": "hsl(229, 70%, 50%)",
-    burger: 96,
-    burgerColor: "hsl(296, 70%, 50%)",
-    kebab: 72,
-    kebabColor: "hsl(97, 70%, 50%)",
-    donut: 140,
-    donutColor: "hsl(340, 70%, 50%)",
+    State: "TX", //label on horizontal axis
+    "Urgent Care": 137, //element that makes up this bar; this bar has 4 elements in total
+    "urgent careColor": "hsl(307, 70%, 50%)", //color for each element
+    "Emergency Room": 96,
+    "emergency roomColor": "hsl(296, 70%, 50%)",
+    "Ambulatory Surgery": 72,
+    "ambulatory surgeryColor": "hsl(97, 70%, 50%)",
+    "Primary Care": 140,
+    "primary careColor": "hsl(340, 70%, 50%)",
+    "Specialist": 10,
+    specialistColor: "hsl(229, 70%, 50%)",
+  },
+  {
+    State: "MD",
+    "Urgent Care": 55,
+    "urgent careColor": "hsl(307, 70%, 50%)",
+    "Emergency Room": 28,
+    "emergency roomColor": "hsl(296, 70%, 50%)",
+    "Ambulatory Surgery": 58,
+    "ambulatory surgeryColor": "hsl(97, 70%, 50%)",
+    "Primary Care": 95,
+    "primary careColor": "hsl(340, 70%, 50%)",
+    "Specialist": 28,
+    specialistColor: "hsl(229, 70%, 50%)",
+    "Inpatient": 16,
+    inpatientColor: "hsl(275, 70%, 50%)"
   },
   {
     country: "AE",
